@@ -1,0 +1,31 @@
+.groups {
+  margin-bottom: 25px;
+}
+
+.group {
+  background-color: #999;
+  margin-right: 5px;
+}
+
+.user {
+  border: 1px solid #999;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.user.accept {
+  background-color: #ffffcc;
+}
+
+.user.deny {
+  background-color: #ff9999;
+}
+
+.user .username {
+  font-weight: bold;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+}

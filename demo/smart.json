@@ -1,0 +1,10 @@
+{
+  "meteor": {
+    "branch": "auth"
+  },
+  "packages": {
+    "groups-ui": {
+      "path": "../lib/groups-ui"
+    }
+  }
+}

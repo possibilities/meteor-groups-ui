@@ -1,0 +1,1 @@
+Groups = new MeteorGroups();

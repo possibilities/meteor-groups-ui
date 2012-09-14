@@ -1,0 +1,34 @@
+<template name="usersAndGroups">
+  <div class="groups">
+    {{#each groups}}
+      {{> group}}
+    {{/each}}
+  </div>
+
+  {{#each users}}
+    {{> user}}
+  {{/each}}
+</template>
+
+<template name="group">
+  {{#with this}}
+    <span class="group" data-name="{{name}}">
+      {{humanize name}}
+    </span>
+  {{/with}}
+</template>
+
+<template name="user">
+  {{#with this}}
+    <div class="user {{acceptClass}}" data-id="{{_id}}">
+      <div class="username">{{username}}</div>
+      {{#each userGroups}}
+        {{> userGroup}}
+      {{/each}}
+    </div>
+  {{/with}}
+</template>
+
+<template name="userGroup">
+  <span class="userGroup group" data-user-id="{{user/_id}}" data-group-name="{{userGroup/name}}">{{humanize userGroup/name}} <a href="#" class="removeUserGroup">X</a>
+</template>
