@@ -1,8 +1,16 @@
 <template name="usersAndGroups">
   <div class="groups">
-    {{#each groups}}
-      {{> group}}
-    {{/each}}
+    <h2>Groups</h2>
+    
+    <p><em>
+      Drag and drop groups onto users
+    </em></p>
+
+    <div class="groups">
+      {{#each groups}}
+        {{> group}}
+      {{/each}}
+    </div>
   </div>
 
   {{#each users}}
@@ -12,7 +20,7 @@
 
 <template name="group">
   {{#with this}}
-    <span class="group" data-name="{{name}}">
+    <span id="group-{{_id}}" class="group label label-info" data-name="{{name}}">
       {{humanize name}}
     </span>
   {{/with}}
@@ -20,15 +28,25 @@
 
 <template name="user">
   {{#with this}}
-    <div class="user {{acceptClass}}" data-id="{{_id}}">
-      <div class="username">{{username}}</div>
-      {{#each userGroups}}
-        {{> userGroup}}
-      {{/each}}
+    <div class="user well {{acceptClass}}" data-id="{{_id}}">
+      <h3>{{username}}</h3>
+      
+      <div class="userGroups">
+        {{#if userGroups/count}}
+          {{#each userGroups}}
+            {{> userGroup}}
+          {{/each}}
+        {{else}}
+          <p><em>{{username}} isn't in any groups yet!</em></p>
+        {{/if}}
+      </div>
     </div>
   {{/with}}
 </template>
 
 <template name="userGroup">
-  <span class="userGroup group" data-user-id="{{user/_id}}" data-group-name="{{userGroup/name}}">{{humanize userGroup/name}} <a href="#" class="removeUserGroup">X</a>
+  <span class="userGroup label label-success" data-user-id="{{user/_id}}" data-group-name="{{userGroup/name}}">
+    {{humanize userGroup/name}} 
+    <a href="#" class="removeUserGroup">X</a>
+  </span>
 </template>

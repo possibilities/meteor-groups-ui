@@ -1,16 +1,10 @@
-.groups {
-  margin-bottom: 25px;
-}
 
-.group {
-  background-color: #999;
+.label {
   margin-right: 5px;
 }
 
-.user {
-  border: 1px solid #999;
-  margin-bottom: 5px;
-  margin-right: 5px;
+.label a {
+  color: white;
 }
 
 .user.accept {
@@ -21,11 +15,22 @@
   background-color: #ff9999;
 }
 
-.user .username {
-  font-weight: bold;
-  padding: 5px;
+.user, .groups {
+  width: 350px;
 }
 
-ul {
-  list-style-type: none;
+.well {
+  padding: 10px !important;
+}
+
+.groups {
+  margin: 20px 0;
+}
+
+.userGroups {
+  margin-top: 10px;
+}
+
+.label {
+  padding: 5px 10px !important;
 }
