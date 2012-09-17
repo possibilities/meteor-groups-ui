@@ -6,14 +6,17 @@
   },
   "dependencies": {
     "basePackages": {
-      "groups-ui": {
-        "path": ".."
+      "underscore-string": {
+        "version": "2.2.0rc.1"
+      },
+      "bootstrap.less": {
+        "version": "2.1.0"
+      },
+      "groups": {
+        "version": "0.0.5"
       }
     },
     "packages": {
-      "groups-ui": {
-        "path": ".."
-      },
       "underscore-string": {
         "git": "https://github.com/possibilities/meteor-underscore-string.git",
         "tag": "v2.2.0rc.1",
@@ -25,7 +28,9 @@
         "commit": "05dab8a4f07ef0f457fd4af4ea897c9d72129a2b"
       },
       "groups": {
-        "path": "/Users/mike/work/m/groups"
+        "git": "https://github.com/possibilities/meteor-groups.git",
+        "tag": "v0.0.5",
+        "commit": "d79861fa9f31d885ffae02dd67ca6b2b725dcf13"
       }
     }
   }

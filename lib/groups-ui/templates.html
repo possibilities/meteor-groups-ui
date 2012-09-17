@@ -1,28 +1,70 @@
 <template name="usersAndGroups">
   <div class="groups">
-    <h2>Groups</h2>
+    {{#if manageMode}}
+      {{> groupsManager}}
+    {{else}}
+      {{> usersManager}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="groupsManager">
+  <div>
+    <a href="#" class="add-group btn btn-mini pull-right"><i class="icon-user"></i> Manage Users</a>
+    <h2>Add group</h2>
+    <p>
+      <input type="text" placeholder="group-name"></input>
+    </p>
     
-    <p><em>
-      Drag and drop groups onto users
-    </em></p>
+    <h2>Delete groups</h2>
 
     <div class="groups">
       {{#each groups}}
-        {{> group}}
+        {{> deleteGroup}}
       {{/each}}
     </div>
   </div>
+</template>
 
-  {{#each users}}
-    {{> user}}
-  {{/each}}
+<template name="usersManager">
+  <div>
+    <a href="#" class="add-group btn btn-mini pull-right"><i class="icon-wrench"></i> Manage Groups</a>
+    <h2>Groups</h2>
+  </div>
+
+  <div><em>
+    Drag and drop groups onto users
+  </em></div>
+
+  <div class="groups clearfix">
+    {{#each groups}}
+      {{> group}}
+    {{/each}}
+  </div>
+
+  <div class="clearfix">
+    {{#each users}}
+      {{> user}}
+    {{/each}}
+  </div>
 </template>
 
 <template name="group">
   {{#with this}}
-    <span id="group-{{_id}}" class="group label label-info" data-name="{{name}}">
+    <span class="group label label-info pull-left" data-name="{{name}}">
       {{humanize name}}
     </span>
+  {{/with}}
+</template>
+
+<template name="deleteGroup">
+  {{#with this}}
+    <p>
+      <a class="deleteGroup btn btn-small" data-id="{{_id}}" href="#"><i class="icon-trash"></i></a>
+      <span class="group label label-info" data-name="{{name}}">
+        {{name}}
+      </span>
+    </p>
   {{/with}}
 </template>
 

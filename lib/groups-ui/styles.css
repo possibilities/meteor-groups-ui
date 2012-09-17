@@ -3,16 +3,20 @@
   margin-right: 5px;
 }
 
+.groups .group {
+  margin-bottom: 10px;
+}
+
 .label a {
   color: white;
 }
 
 .user.accept {
-  background-color: #ffffcc;
+  background-color: #dff0d8;
 }
 
 .user.deny {
-  background-color: #ff9999;
+  background-color: #f2dede;
 }
 
 .user, .groups {
@@ -33,4 +37,9 @@
 
 .label {
   padding: 5px 10px !important;
+}
+
+.group {
+  cursor: hand;
+  cursor: pointer;
 }

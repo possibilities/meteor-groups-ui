@@ -10,8 +10,7 @@
   },
   "packages": {
     "underscore-string": "2.2.0rc.1",
-    "groups": {
-      "path": "/Users/mike/work/m/groups"
-    }
+    "bootstrap.less": "2.1.0",
+    "groups": "0.0.5"
   }
 }

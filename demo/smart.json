@@ -4,7 +4,7 @@
   },
   "packages": {
     "groups-ui": {
-      "path": "../lib/groups-ui"
+      "path": ".."
     }
   }
 }
