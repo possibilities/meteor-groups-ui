@@ -3,7 +3,7 @@
   "description": "User interface for Meteor Groups",
   "homepage": "https://github.com/possibilities/meteor-groups-ui",
   "author": "Mike Bannister <notimpossiblemike@gmail.com> (http://po.ssibiliti.es)",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "git": "https://github.com/possibilities/meteor-groups-ui.git",
   "meteor": {
     "branch": "auth"
@@ -11,6 +11,6 @@
   "packages": {
     "underscore-string": "2.2.0rc.1",
     "bootstrap.less": "2.1.0",
-    "groups": "0.0.5"
+    "groups": "0.0.6"
   }
 }
