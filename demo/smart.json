@@ -3,7 +3,7 @@
     "path": "../../meteor"
   },
   "packages": {
-    "groups": "v0.0.6",
+    "groups": "0.0.6",
     "groups-ui": {
       "path": ".."
     },
