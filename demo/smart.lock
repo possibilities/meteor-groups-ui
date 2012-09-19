@@ -10,7 +10,9 @@
       "groups-ui": {
         "path": ".."
       },
-      "environment-hooks": {}
+      "environment-hooks": {
+        "path": "/Users/mike/work/m/environment-hooks"
+      }
     },
     "packages": {
       "groups": {
@@ -20,9 +22,7 @@
         "path": ".."
       },
       "environment-hooks": {
-        "git": "https://github.com/possibilities/meteor-environment-hooks.git",
-        "tag": "v0.0.1",
-        "commit": "7a7d2d19e3495538047a97290af2766c2a29e332"
+        "path": "/Users/mike/work/m/environment-hooks"
       },
       "underscore-string": {
         "git": "https://github.com/possibilities/meteor-underscore-string.git",

@@ -2,8 +2,8 @@
 // Groups.groups.remove({});
 // Groups.groupsToUsers.remove({});
 
-Groups.findOrCreateGroup('log-admin');
-Groups.findOrCreateGroup('story-admin');
+Groups.findOrCreateGroup('log-manager');
+Groups.findOrCreateGroup('story-manager');
 
 var user = Meteor.users.findOne({
   username: 'possibilities'

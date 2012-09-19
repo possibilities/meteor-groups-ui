@@ -9,6 +9,8 @@
     "groups-ui": {
       "path": ".."
     },
-    "environment-hooks": {}
+    "environment-hooks": {
+      "path": "/Users/mike/work/m/environment-hooks"
+    }
   }
 }
