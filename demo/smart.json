@@ -1,10 +1,14 @@
 {
   "meteor": {
-    "branch": "auth"
+    "path": "../../meteor"
   },
   "packages": {
+    "groups": {
+      "path": "../../groups"
+    },
     "groups-ui": {
       "path": ".."
-    }
+    },
+    "environment-hooks": {}
   }
 }

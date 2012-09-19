@@ -1,18 +1,28 @@
 {
   "meteor": {
-    "git": "https://github.com/meteor/meteor.git",
-    "branch": "auth",
-    "commit": "a5a3d3a94a0c35bbea7f81752e72edd3190e4842"
+    "path": "../../meteor"
   },
   "dependencies": {
     "basePackages": {
+      "groups": {
+        "path": "../../groups"
+      },
       "groups-ui": {
         "path": ".."
-      }
+      },
+      "environment-hooks": {}
     },
     "packages": {
+      "groups": {
+        "path": "../../groups"
+      },
       "groups-ui": {
         "path": ".."
+      },
+      "environment-hooks": {
+        "git": "https://github.com/possibilities/meteor-environment-hooks.git",
+        "tag": "v0.0.1",
+        "commit": "7a7d2d19e3495538047a97290af2766c2a29e332"
       },
       "underscore-string": {
         "git": "https://github.com/possibilities/meteor-underscore-string.git",
@@ -23,9 +33,6 @@
         "git": "https://github.com/lvbreda/meteor_bootstrapless",
         "tag": "v2.1.0",
         "commit": "05dab8a4f07ef0f457fd4af4ea897c9d72129a2b"
-      },
-      "groups": {
-        "path": "/Users/mike/work/m/groups"
       }
     }
   }

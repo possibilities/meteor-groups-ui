@@ -60,7 +60,7 @@
 <template name="deleteGroup">
   {{#with this}}
     <p>
-      <a class="deleteGroup btn btn-small" data-id="{{_id}}" href="#"><i class="icon-trash"></i></a>
+      <a class="deleteGroup btn btn-small" data-id="{{_id}}" href="#" {{#if locked}}disabled{{/if}}><i class="icon-{{#if locked}}lock{{else}}trash{{/if}}"></i></a>
       <span class="group label label-info" data-name="{{name}}">
         {{name}}
       </span>
