@@ -1,6 +1,6 @@
 {
   "meteor": {
-    "path": "../../meteor"
+    "branch": "auth"
   },
   "packages": {
     "groups": "0.0.6",

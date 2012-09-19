@@ -5,24 +5,28 @@
   "dependencies": {
     "basePackages": {
       "groups": {
-        "path": "../../groups"
+        "version": "0.0.6"
       },
       "groups-ui": {
         "path": ".."
       },
       "environment-hooks": {
-        "path": "/Users/mike/work/m/environment-hooks"
+        "version": "0.0.2"
       }
     },
     "packages": {
       "groups": {
-        "path": "../../groups"
+        "git": "https://github.com/possibilities/meteor-groups.git",
+        "tag": "v0.0.6",
+        "commit": "ee45c3fbdb84313f6f0124ed30e02e101d3829cb"
       },
       "groups-ui": {
         "path": ".."
       },
       "environment-hooks": {
-        "path": "/Users/mike/work/m/environment-hooks"
+        "git": "https://github.com/possibilities/meteor-environment-hooks.git",
+        "tag": "v0.0.2",
+        "commit": "ec214129464e49b9cdb081ccb3d50ed8930722be"
       },
       "underscore-string": {
         "git": "https://github.com/possibilities/meteor-underscore-string.git",
